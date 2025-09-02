@@ -9,7 +9,13 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // MIDDLEWARE
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://noted-api.vercel.app"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
