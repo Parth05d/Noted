@@ -14,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://noted-api.vercel.app/api/tasks";
 
 export default function TaskModal({
   isOpen,

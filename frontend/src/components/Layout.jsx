@@ -17,9 +17,12 @@ export default function Layout({ onLogout, user }) {
     try {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("No auth token found");
-      const { data } = await axios.get("http://localhost:5000/api/tasks/gp", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const { data } = await axios.get(
+        "https://noted-api.vercel.app/api/tasks/gp",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
       const arr = Array.isArray(data)
         ? data

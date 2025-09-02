@@ -5,7 +5,7 @@ import { useOutletContext } from "react-router-dom";
 import TaskItem from "../components/TaskItem";
 import TaskModal from "../components/TaskModal";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://noted-api.vercel.app/api/tasks";
 
 export default function PendingPage() {
   const { tasks = [], refreshTasks } = useOutletContext();

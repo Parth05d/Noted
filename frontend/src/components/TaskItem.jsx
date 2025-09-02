@@ -10,7 +10,7 @@ import axios from "axios";
 import { format, isToday } from "date-fns";
 import TaskModal from "./TaskModal";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://noted-api.vercel.app";
 
 export default function TaskItem({
   task,

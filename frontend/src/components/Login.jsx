@@ -13,7 +13,7 @@ export default function Login({ onSubmit, onSwitchMode }) {
   const [rememberMe, setRememberMe] = useState(false);
 
   const navigate = useNavigate();
-  const URL = "http://localhost:5000";
+  const URL = "https://noted-api.vercel.app";
 
   useEffect(() => {
     const token = localStorage.getItem("token");

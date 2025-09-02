@@ -25,7 +25,7 @@ import TaskItem from "../components/TaskItem";
 import axios from "axios";
 import TaskModal from "../components/TaskModal";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://noted-api.vercel.app/api/tasks";
 
 export default function Dashboard() {
   const { tasks, refreshTasks } = useOutletContext();

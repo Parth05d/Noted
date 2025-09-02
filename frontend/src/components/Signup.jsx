@@ -9,7 +9,7 @@ import {
 } from "../assets/dummy";
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://noted-api.vercel.app";
 const INITIAL_FORM = { name: "", email: "", password: "" };
 
 export default function Signup({ onSwitchMode }) {
