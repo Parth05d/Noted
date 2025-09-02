@@ -11,7 +11,7 @@ const port = process.env.PORT || 4000;
 // MIDDLEWARE
 app.use(
   cors({
-    origin: ["https://noted-api.vercel.app"],
+    origin: ["https://noted-byparth.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
