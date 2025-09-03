@@ -57,7 +57,7 @@ export default function TaskItem({
     const newStatus = isCompleted ? "No" : "Yes";
     try {
       const res = await axios.put(
-        `${API_BASE}/${task.id}/gp`,
+        `${API_BASE}/${task.id}`,
         {
           completed: newStatus,
         },
@@ -79,7 +79,7 @@ export default function TaskItem({
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`${API_BASE}/${task._id}/gp`, {
+      await axios.delete(`${API_BASE}/${task._id}`, {
         headers: getAuthHeader(),
       });
       onRefresh?.();
@@ -97,7 +97,7 @@ export default function TaskItem({
         dueDate,
         completed,
       }) => ({ title, description, priority, dueDate, completed }))(updateTask);
-      await axios.put(`${API_BASE}/${task._id}/gp`, payload, {
+      await axios.put(`${API_BASE}/${task._id}`, payload, {
         headers: getAuthHeader(),
       });
       setShowEditModal(false);

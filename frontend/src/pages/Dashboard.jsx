@@ -88,7 +88,7 @@ export default function Dashboard() {
     async (taskData) => {
       try {
         if (taskData.id)
-          await axios.put(`${API_BASE}/${taskData.id}/gp`, taskData);
+          await axios.put(`${API_BASE}/${taskData.id}`, taskData);
         refreshTasks();
         setShowModal(false);
         setSelectedTask(null);

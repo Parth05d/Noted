@@ -77,7 +77,7 @@ export default function TaskModal({
 
       try {
         const isEdit = Boolean(taskData.id);
-        const url = isEdit ? `${API_BASE}/${taskData.id}/gp` : `${API_BASE}/gp`;
+        const url = isEdit ? `${API_BASE}/${taskData.id}` : `${API_BASE}/`;
         const res = await fetch(url, {
           method: isEdit ? "PUT" : "POST",
           headers: getHeaders(),

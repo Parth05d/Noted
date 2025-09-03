@@ -9,9 +9,22 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // MIDDLEWARE
+// app.use(
+//   cors({
+//     origin: ["https://noted-byparth.vercel.app"],
+//     methods: ["POST", "GET", "PUT", "DELETE"],
+//     credentials: true,
+//   })
+// );
+
+// MIDDLEWARE
 app.use(
   cors({
-    origin: ["https://noted-byparth.vercel.app"],
+    origin: [
+      "https://noted-byparth.vercel.app", // Production frontend
+      "http://localhost:3000", // Common local dev server
+      "http://localhost:5173", // Another common one (e.g., Vite)
+    ],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
