@@ -10,7 +10,7 @@ import axios from "axios";
 import { format, isToday } from "date-fns";
 import TaskModal from "./TaskModal";
 
-const API_BASE = "https://noted-api.vercel.app";
+const API_BASE = "https://noted-api.vercel.app/api/tasks";
 
 export default function TaskItem({
   task,
@@ -57,7 +57,7 @@ export default function TaskItem({
     const newStatus = isCompleted ? "No" : "Yes";
     try {
       const res = await axios.put(
-        `${API_BASE}/${task.id}`,
+        `${API_BASE}/${task._id}`,
         {
           completed: newStatus,
         },
