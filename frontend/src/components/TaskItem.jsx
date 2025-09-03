@@ -203,7 +203,7 @@ export default function TaskItem({
 
       <TaskModal
         isOpen={showEditModal}
-        onClose={() => setShowMenu(false)}
+        onClose={() => setShowEditModal(false)}
         taskToEdit={task}
         onSave={handleSave}
       />
