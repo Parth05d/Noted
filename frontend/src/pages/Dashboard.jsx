@@ -169,11 +169,11 @@ export default function Dashboard() {
               onChange={(e) => setFilter(e.target.value)}
               className={SELECT_CLASSES}
             >
-              {FILTER_OPTIONS.map((opt) => {
+              {FILTER_OPTIONS.map((opt) => (
                 <option key={opt} value={opt}>
                   {opt.charAt(0).toUpperCase() + opt.slice(1)}
-                </option>;
-              })}
+                </option>
+              ))}
             </select>
 
             <div className={TABS_WRAPPER}>

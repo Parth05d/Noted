@@ -294,13 +294,13 @@ export const CT_CLASSES = {
   subtitle: "text-xs md:text-sm text-gray-500 mt-1 ml-7 md:ml-8",
   sortContainer: "w-full md:w-auto mt-2 md:mt-0",
   sortBox:
-    "flex items-center justify-between bg-white p-2 md:p-3 rounded-xl shadow-sm border border-purple-100 w-full md:w-auto",
+    "flex items-center justify-between bg-white p-3 rounded-xl shadow-sm border border-purple-100 w-full md:w-auto",
   filterLabel: "flex items-center gap-2 text-gray-700 font-medium",
   select:
-    "px-2 py-1 md:px-3 md:py-2 border border-purple-100 rounded-lg focus:ring-2 focus:ring-purple-500 md:hidden text-xs md:text-sm",
-  btnGroup: "hidden md:flex space-x-1 bg-purple-50 p-1 rounded-lg ml-2 md:ml-3",
+    "px-3 py-2 border border-purple-100 rounded-lg focus:ring-2 focus:ring-purple-500 md:hidden text-sm",
+  btnGroup: "hidden md:flex space-x-1 bg-purple-50 p-1 rounded-lg ml-3",
   btnBase:
-    "px-2 py-1 md:px-3 md:py-1.5 rounded-lg text-xs font-medium transition-all duration-200 flex items-center gap-1",
+    "px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 flex items-center gap-1.5",
   btnActive: "bg-white text-purple-700 shadow-sm border border-purple-100",
   btnInactive: "text-gray-600 hover:text-purple-700 hover:bg-purple-100/50",
   list: "space-y-3 md:space-y-4",
